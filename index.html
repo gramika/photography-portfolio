@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photography portfolio</title>
+    <!-- css linking -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- icon linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libertinus+Mono&family=Manufacturing+Consent&display=swap"
+        rel="stylesheet">
+    <!-- animate css linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- scrolling animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- always complete the head part.like title,links etc -->
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- header/nav bar -->
+        <nav>
+            <!-- logo -->
+            <img src="./images/logo.jpeg" alt="logo unavailable" class="logo">
+            <!-- links to differnt parts of the portfolio -->
+            <ul>
+                <li class="list-item"><a href="" class="links">home</a></li>
+                <li class="list-item"><a href="" class="links">about</a></li>
+                <li class="list-item"><a href="" class="links">skills</a></li>
+                <li class="list-item"><a href="" class="links">contact</a></li>
+            </ul>
+        </nav>
+        <!-- home -->
+        <!-- section tag is similar to div only -->
+        <section id="home">
+            <!-- for the content section -->
+            <div class="home-content">
+                <!-- joe is styled differently. so span is used there -->
+                <h1 id="username" class="animate__animated animate__pulse">I'm Maria <span id="lname">Joe</span></h1>
+                <p id="user-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- for the button like link.when clicked the resume must be downloaded -->
+                <a href="./images/task8 (2).pdf" id="download" download>VIEW BROCHURE</a>
+            </div>
+            <!-- for the image section -->
+            <div class="home-img">
+                <!-- background image -->
+                <img src="./images/background.png" alt="no image" class="group1" id="shape">
+                <!-- girl image -->
+                <img src="./images/lady.png" class="group1" id="girl" alt="no image">
+
+            </div>
+
+        </section>
+        <section id="about">
+            <div class="sectionhead">
+                <h1 class="mainhead">About me</h1>
+                <span class="subhead">Introduction</span>
+            </div>
+            <div class="aboutbody">
+                <div class="aboutimage">
+                    <img src="./images/aboutgirl.png" alt="no image">
+                </div>
+                <div class="aboutcontent">
+                    <p data-aos="zoom-in-down">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sed
+                        mollitia velit, hic earum
+                        quisquam minus, voluptatum quam perferendis ea dolore non consequatur autem. <br>Ipsa delectus
+                        quis excepturi
+                    </p>
+                    <div class="information">
+                        <div class="infobox">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Maria Joe</span>
+                        </div>
+                        <div class="infobox">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>9874563210</span>
+                        </div>
+                        <div class="infobox">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>maria@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- skills section -->
+        <section id="skills">
+            <div class="sectionhead">
+                <h1 class="mainhead">Skills</h1>
+                <span class="subhead">My skills</span>
+            </div>
+            <div class="skillContent">
+                <div class="progressBars" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <!-- bar 1  -->
+                    <div class="bars">
+                        <h3 class="barHead">Portrait</h3>
+                        <span class="barPercent">95%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar portbar"></div>
+                    </div>
+                    <!-- bar 2  -->
+                    <div class="bars">
+                        <h3 class="barHead">Landscape</h3>
+                        <span class="barPercent">90%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar landbar"></div>
+                    </div>
+                    <!-- bar 3  -->
+                    <div class="bars">
+                        <h3 class="barHead">editing</h3>
+                        <span class="barPercent">85%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar editbar"></div>
+                    </div>
+                    <!-- bar 4  -->
+                    <div class="bars">
+                        <h3 class="barHead">wildlife</h3>
+                        <span class="barPercent">78%</span>
+                        <div class="basebar"></div>
+                        <div class="basebar wildbar"></div>
+                    </div>
+                </div>
+                <div class="skillImage">
+                    <img src="./images/img.png" alt="skills" class="mySkill">
+                </div>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section id="contact">
+            <div class="sectionhead">
+                <h1 class="mainhead">Contacts</h1>
+                <span class="subhead">my contacts</span>
+            </div>
+            <div class="iconCollection">
+                <!-- linked in -->
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/gramika-siju-9101a724a/" target="_blank"><i
+                            class="fa-brands fa-linkedin brands"></i></a>
+                    <!-- ''brands'' enn paranja class name is for styling the icons -->
+                </div>
+                <!-- github -->
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/gramika-siju-9101a724a/" target="_blank"><i
+                            class="fa-brands fa-github brands"></i></a>
+                </div>
+                <!-- twitter -->
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/gramika-siju-9101a724a/" target="_blank"><i
+                            class="fa-brands fa-twitter brands"></i></a>
+                </div>
+                <!-- facebook -->
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/gramika-siju-9101a724a/" target="_blank"><i
+                            class="fa-brands fa-facebook brands"></i></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <p id="copyright"> &copy;Maria Joe photography - june 2024, &reg; All Rights Reserved</p>
+            <!-- up arrow -->
+            <div class="icon up-arrow">
+                <a href=""><i class="fa-solid fa-angle-up brands"></i></a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<!-- aos script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
